@@ -73,7 +73,7 @@ const articleSection = style(
         height:'auto',
         display:'flex',
         flexDirection:'column',
-        gap:'10px'
+        gap:'10px',
     }
 )
 
@@ -85,7 +85,6 @@ const nameTitle = style(
         fontStyle: 'normal',
         fontWeight: 600,
         lineHeight: 'normal',
-        margin:0
     }
 )
 

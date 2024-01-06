@@ -44,6 +44,7 @@ const projectWrapper = style(
         height: '588px',
         padding: '22px',
         flexShrink: 0,
+        backgroundColor:'#FFF'
        
     },
     media(

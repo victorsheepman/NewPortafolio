@@ -51,7 +51,6 @@ const textStyle = style(
         fontFamily: 'Montserrat',
         fontStyle: 'normal',
         lineHeight: 'normal',
-        backgroundColor:'#FFF'
     }
 )
 
@@ -61,6 +60,5 @@ const textWrapper = style(
         height: '79px',
         flexShrink: 0,
         marginTop:'33px',
-        backgroundColor:'#FFF'
     }
 )

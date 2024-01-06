@@ -32,8 +32,16 @@ const experienceTitle = style(
         fontStyle: 'normal',
         fontWeight: 500,
         lineHeight: 'normal',
-        backgroundColor:'#FFF'
     }
 )
 
-const companiesWrapper = style({width:'100%',height:'auto', display:'flex', flexDirection:'column', gap:'33px', marginTop:'44px' })
+const companiesWrapper = style(
+    {
+        width:'100%',
+        height:'auto', 
+        display:'flex', 
+        flexDirection:'column', 
+        gap:'33px', 
+        marginTop:'44px' 
+    }
+)
