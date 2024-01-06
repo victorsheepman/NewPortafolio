@@ -1,2 +1,5 @@
 export * from './MailIcon'
 export * from './PhoneIcon'
+export * from './ReactIcon'
+export * from './ReduxIcon'
+export * from './TsIcon'
