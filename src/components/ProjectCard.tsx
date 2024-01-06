@@ -1,4 +1,5 @@
 import { classes, media, style } from 'typestyle'
+import { textMixin } from '../theme'
 
 interface ProjectCardProps {
     hashtags:string[],
@@ -7,19 +8,20 @@ interface ProjectCardProps {
     demo:string,
     code:string
 }
+
 export const ProjectCard:React.FC<ProjectCardProps> = ({hashtags, title, desc, demo, code}) => {
   return (
     <article className={projectWrapper}>
         <figure className={projectFigure}></figure>
         <div className={style({width:'auto', height:'auto'})}>
             <section className={classes(projectSection, style({display:'flex', gap:'9px'})) }>
-                {hashtags.map(i=>(<span className={classes(textStyle, style({color: '#4F4F4F',fontSize: '16px',}))}>{i}</span>))}
+                {hashtags.map(i=>(<span className={classes(textStyle, style(textMixin('4F4F4F', '16px')))}>{i}</span>))}
             </section>
             <section className={classes(classes(projectSection, style({ marginTop:'22px' })))}>
-                <h4 className={classes(textStyle, style({color: '#333', fontSize:'24px', margin:0}))}>
+                <h4 className={classes(textStyle, style(textMixin('#333', '24px')))}>
                 {title}
                 </h4>
-                <p className={classes(textStyle, style({color:'#828282', fontSize:'16px'}))}>
+                <p className={classes(textStyle, style(textMixin('#828282', '16px')))}>
                     {desc}
                 </p>
             </section>
@@ -41,7 +43,7 @@ export const ProjectCard:React.FC<ProjectCardProps> = ({hashtags, title, desc, d
 const projectWrapper = style(
     {
         width: '395px',
-        height: '588px',
+        height: 'auto',
         padding: '22px',
         flexShrink: 0,
         backgroundColor:'#FFF'
