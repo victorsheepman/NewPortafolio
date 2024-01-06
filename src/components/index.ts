@@ -1,2 +1,5 @@
 export * from './ProfileCard'
 export * from './ProjectCard'
+export * from './Company'
+export * from './ExperienceCard'
+export * from './StackCard'

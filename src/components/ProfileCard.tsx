@@ -1,4 +1,4 @@
-import { classes, style } from 'typestyle'
+import { classes, media, style } from 'typestyle'
 import { MailIcon, PhoneIcon } from '../assets'
 
 
@@ -47,13 +47,19 @@ export const ProfileCard:React.FC<ProfileCardProps> = ({name, job, email, phone,
 
 const articleWrapper = style(
     {
-        width: '413px',
+        width: '100%',
         height: '692.167px',
         flexShrink: 0,
         borderRadius: '12px',
         background: '#FFF',
         padding:'23px',
-    }
+    },
+    media(
+        {minWidth:1366},
+        {
+            width:'413px'
+        }
+    )
 )
 
 const articleFigure = style(
@@ -85,6 +91,7 @@ const nameTitle = style(
         fontStyle: 'normal',
         fontWeight: 600,
         lineHeight: 'normal',
+        backgroundColor:'#FFF'
     }
 )
 

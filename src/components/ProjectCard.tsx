@@ -25,15 +25,15 @@ export const ProjectCard:React.FC<ProjectCardProps> = ({hashtags, title, desc, d
                     {desc}
                 </p>
             </section>
-            <section className={classes(projectSection, style({display:'flex', gap:'9px'})) }>
+            <section className={classes(projectSection, style({display:'flex', gap:'9px', marginTop:'51px'})) }>
                 <a href={demo}>
                     <button className={classes(projectButton, textStyle)} >
                     Demo</button>
                 </a>
-            <a href={code}>
-                <button className={classes(projectButton, textStyle, style({backgroundColor:'white', color:'#2F80ED', border:'1px #2F80ED solid'}))}>Code</button>
-            </a>
-            
+                <a href={code}>
+                    <button className={classes(projectButton, textStyle, style({backgroundColor:'white', color:'#2F80ED', border:'1px #2F80ED solid'}))}>Code</button>
+                </a>
+                
             </section>
         </div>
     </article>
@@ -46,13 +46,14 @@ const projectWrapper = style(
         height: 'auto',
         padding: '22px',
         flexShrink: 0,
-        backgroundColor:'#FFF'
+        backgroundColor:'#FFF',
+        borderRadius:'12px'
        
     },
     media(
-        {minWidth:768},
+        {minWidth:1366},
         {
-            width: '1024px',
+            width: '100%',
             height: '311px',
             display:'flex',
             gap:'34px', 

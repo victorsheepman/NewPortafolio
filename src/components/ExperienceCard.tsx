@@ -15,7 +15,7 @@ export const ExperienceCard = () => {
 
 const experienceWrapper = style(
     {
-        width: '417px',
+        width: '100%',
         height: 'auto',
         flexShrink: 0,
         borderRadius: '12px',
