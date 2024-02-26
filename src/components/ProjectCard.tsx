@@ -6,13 +6,16 @@ interface ProjectCardProps {
     title:string,
     desc:string,
     demo:string,
-    code:string
+    code:string,
+    img:string
 }
 
-export const ProjectCard:React.FC<ProjectCardProps> = ({hashtags, title, desc, demo, code}) => {
+export const ProjectCard:React.FC<ProjectCardProps> = ({hashtags, title, desc, demo, code, img}) => {
   return (
     <article className={projectWrapper}>
-        <figure className={projectFigure}></figure>
+        <figure className={projectFigure}>
+            <img src={img} className={projectImg} alt="" />
+        </figure>
         <div className={style({width:'auto', height:'auto'})}>
             <section className={classes(projectSection, style({display:'flex', gap:'9px'})) }>
                 {hashtags.map(i=>(<span className={classes(textStyle, style(textMixin('4F4F4F', '16px')))}>{i}</span>))}
@@ -54,7 +57,7 @@ const projectWrapper = style(
         {minWidth:1366},
         {
             width: '100%',
-            height: '311px',
+            height: 'auto',
             display:'flex',
             gap:'34px', 
         }
@@ -76,6 +79,14 @@ const projectFigure = style(
             flexShrink: 0
         }
     )
+)
+
+const projectImg = style(
+    {
+        width:'100%',
+        height:'100%',
+        objectFit:'contain'
+    }
 )
 const projectSection = style(
     {

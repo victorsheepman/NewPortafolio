@@ -4,5 +4,6 @@ export type Project = {
     hashtags:string[],
     desc:string,
     demo:string,
-    code:string
+    code:string,
+    img:string
 }
