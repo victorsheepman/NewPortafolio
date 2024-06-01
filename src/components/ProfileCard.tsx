@@ -1,5 +1,6 @@
 import { classes, media, style } from 'typestyle'
 import { MailIcon, PhoneIcon } from '../assets'
+import { Button, Popover } from 'antd'
 
 
 interface ProfileCardProps {
@@ -10,7 +11,19 @@ interface ProfileCardProps {
     img:string
 }
 
+
+
 export const ProfileCard:React.FC<ProfileCardProps> = ({name, job, email, phone, img}) => {
+    const emailContent = (
+        <div>
+          <p>{email}</p>
+        </div>
+    );
+    const phoneContent = (
+        <div>
+          <p>{phone}</p>
+        </div>
+    );
   return (
     <article className={articleWrapper}>
         <figure className={articleFigure}>
@@ -25,14 +38,18 @@ export const ProfileCard:React.FC<ProfileCardProps> = ({name, job, email, phone,
             </span>
         </section>
         <section className={classes(articleSection, style({marginTop:'32px'}))}>
-            <span className={classes(articleInfo, articleSpan, style({color:'#4F4F4F'}))}>
-                <MailIcon />
-                {email}
-            </span>
-            <span className={classes(articleInfo, articleSpan, style({color:'#4F4F4F'}))}>
-                <PhoneIcon />
-                {phone}
-            </span>
+            <div className={articlePoverSection}>
+                <Popover content={emailContent} title="Email" trigger="hover">
+                    <Button type="link">
+                        <MailIcon />
+                    </Button>
+                </Popover>
+                <Popover content={phoneContent} title="Telefono" trigger="hover">
+                    <Button type="link">
+                        <PhoneIcon />
+                    </Button>
+                </Popover>
+            </div>
         </section>
         <div className={ style({ 
                 width: '332.491px',
@@ -48,7 +65,7 @@ export const ProfileCard:React.FC<ProfileCardProps> = ({name, job, email, phone,
 const articleWrapper = style(
     {
         width: '100%',
-        height: '692.167px',
+        height: '550px',
         flexShrink: 0,
         borderRadius: '12px',
         background: '#FFF',
@@ -83,6 +100,15 @@ const articleSection = style(
     }
 )
 
+const articlePoverSection = style(
+    {
+        width:'100%',
+        height:'auto',
+        display:'flex',
+        justifyContent:'flex-start',
+    }
+)
+
 const nameTitle = style(
     {
         color: '#4F4F4F',
@@ -103,15 +129,6 @@ const articleSpan = style(
         fontStyle: 'normal',
         fontWeight: 500,
         lineHeight: 'normal',
-    }
-)
-
-const articleInfo = style(
-    {
-        width:'100%',
-        height:'auto',
-        display:'flex',
-        gap:'8.5px',
     }
 )
 
