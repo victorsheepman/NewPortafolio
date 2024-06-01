@@ -29,10 +29,15 @@ export const ProjectCard:React.FC<ProjectCardProps> = ({hashtags, title, desc, d
                 </p>
             </section>
             <section className={classes(projectSection, style({display:'flex', gap:'9px', marginTop:'51px'})) }>
-                <a href={demo}>
-                    <button className={classes(projectButton, textStyle)} >
-                    Demo</button>
-                </a>
+                {
+                    demo !== '' ? (
+                        <a ref={demo}>
+                            <button className={classes(projectButton, textStyle)} >
+                            Demo</button>
+                        </a>
+                    ) : null
+                }
+               
                 <a href={code}>
                     <button className={classes(projectButton, textStyle, style({backgroundColor:'white', color:'#2F80ED', border:'1px #2F80ED solid'}))}>Code</button>
                 </a>
@@ -114,5 +119,6 @@ const projectButton = style(
         backgroundColor:'#2F80ED',
         color:'#FFFFFF',
         fontSize:'18px',
+        cursor:'pointer'
     }
 )

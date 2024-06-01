@@ -1,6 +1,6 @@
 import { Project } from "../schema/project.schema"; 
 
-export const projects:Project[] = [
+export const projectsWEB:Project[] = [
     {
         title:'Block Master', 
         hashtags:['#React', '#Sass','#TS'],
@@ -34,5 +34,42 @@ export const projects:Project[] = [
         code:'https://github.com/victorsheepman/TodoApp-TS',
         demo:'https://gentle-sunburst-dad1fe.netlify.app/',
         img:'https://sqrevjfizglmjxxfuvxy.supabase.co/storage/v1/object/sign/Talhua/todoApp.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJUYWxodWEvdG9kb0FwcC5wbmciLCJpYXQiOjE3MDU1OTgzOTMsImV4cCI6MTczNzEzNDM5M30.fWbIoc0zTBxjt7IZdVTpUObEq4TNdQJZZjjQs6eZ4Wg&t=2024-01-18T17%3A19%3A35.096Z'
+    },
+    {
+        title:'Marvel App',
+        hashtags:['#Swift', '#Alamofire','#MVC', '#UIKIT'],
+        desc:'MarvelApp es una aplicación diseñada en UIKit en la que se obtiene un listado de personajes de Marvel y un detalle de cada personaje. Es una aplicación adaptada para iOS.',
+        code:'https://github.com/victorsheepman/MarvelApp.git',
+        demo:'',
+        img:'https://sqrevjfizglmjxxfuvxy.supabase.co/storage/v1/object/sign/Talhua/marvel/home.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJUYWxodWEvbWFydmVsL2hvbWUucG5nIiwiaWF0IjoxNzE3MjU5NTE3LCJleHAiOjE3NDg3OTU1MTd9.n2USAi5QV36NTEqx6uUYRzeCx0FQ-RI_SiyiYyTktbg&t=2024-06-01T16%3A31%3A51.240Z'
+    },
+    {
+        title:'Pokemon App',
+        hashtags:['#Swift', '#SwiftUI','#MVVM', '#Combine'],
+        desc:'PokemonApp es una aplicación diseñada en SwiftUI en la que se obtiene un listado de pokemones y se puede acceder a una vista sobre la informacion de cada pokemon.',
+        code:'https://github.com/victorsheepman/MarvelApp.git',
+        demo:'',
+        img:'https://sqrevjfizglmjxxfuvxy.supabase.co/storage/v1/object/sign/Talhua/pokemon/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-05-19%20at%2013.41.26.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJUYWxodWEvcG9rZW1vbi9TaW11bGF0b3IgU2NyZWVuc2hvdCAtIGlQaG9uZSAxNSBQcm8gLSAyMDI0LTA1LTE5IGF0IDEzLjQxLjI2LnBuZyIsImlhdCI6MTcxNzI1OTYwNCwiZXhwIjoxNzQ4Nzk1NjA0fQ.xSOAsIoMxqvVlFbtqBlCDUHHUPihd2auheA9ApJJie8&t=2024-06-01T16%3A33%3A18.324Z'
     }
+
+]
+
+export const projectsIOS:Project[] = [
+    {
+        title:'Marvel App',
+        hashtags:['#Swift', '#Alamofire','#MVC', '#UIKIT'],
+        desc:'MarvelApp es una aplicación diseñada en UIKit en la que se obtiene un listado de personajes de Marvel y un detalle de cada personaje. Es una aplicación adaptada para iOS.',
+        code:'https://github.com/victorsheepman/MarvelApp.git',
+        demo:'',
+        img:'https://sqrevjfizglmjxxfuvxy.supabase.co/storage/v1/object/sign/Talhua/marvel/home.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJUYWxodWEvbWFydmVsL2hvbWUucG5nIiwiaWF0IjoxNzE3MjU5NTE3LCJleHAiOjE3NDg3OTU1MTd9.n2USAi5QV36NTEqx6uUYRzeCx0FQ-RI_SiyiYyTktbg&t=2024-06-01T16%3A31%3A51.240Z'
+    },
+    {
+        title:'Pokemon App',
+        hashtags:['#Swift', '#SwiftUI','#MVVM', '#Combine'],
+        desc:'PokemonApp es una aplicación diseñada en SwiftUI en la que se obtiene un listado de pokemones y se puede acceder a una vista sobre la informacion de cada pokemon.',
+        code:'https://github.com/victorsheepman/MarvelApp.git',
+        demo:'',
+        img:'https://sqrevjfizglmjxxfuvxy.supabase.co/storage/v1/object/sign/Talhua/pokemon/Simulator%20Screenshot%20-%20iPhone%2015%20Pro%20-%202024-05-19%20at%2013.41.26.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJUYWxodWEvcG9rZW1vbi9TaW11bGF0b3IgU2NyZWVuc2hvdCAtIGlQaG9uZSAxNSBQcm8gLSAyMDI0LTA1LTE5IGF0IDEzLjQxLjI2LnBuZyIsImlhdCI6MTcxNzI1OTYwNCwiZXhwIjoxNzQ4Nzk1NjA0fQ.xSOAsIoMxqvVlFbtqBlCDUHHUPihd2auheA9ApJJie8&t=2024-06-01T16%3A33%3A18.324Z'
+    }
+
 ]
