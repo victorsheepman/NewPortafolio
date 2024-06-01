@@ -1,21 +1,20 @@
 import { Col, Row } from 'antd'
 import { style } from 'typestyle'
-import { ReactIcon, TsIcon, ReduxIcon } from '../assets'
-
+import { SwiftIcon, SwiftUIIcon, Xcode  } from '../assets'
 
 export const StackCard = () => {
   return (
     <div className={wrapper}>
-        <h5 className={textStyle}>Front end</h5>
-        <Row>
+        <h5 className={textStyle}>Stack</h5>
+        <Row className={style({alignItems:'baseline'})}>
             <Col span={8}>
-                <ReactIcon />
+                <SwiftIcon />
             </Col>
             <Col span={8}>
-                <ReduxIcon />
+                <SwiftUIIcon />
             </Col>
             <Col span={8}>
-                <TsIcon />
+               <Xcode />
             </Col>
         </Row>
     </div>
