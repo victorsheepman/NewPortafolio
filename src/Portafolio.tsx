@@ -1,6 +1,6 @@
 import { Col, Row } from "antd"
 import { ProfileCard, StackCard,ProjectCard } from "./components"
-import {  profile, projects } from "./mock"
+import {  profile, projectsIOS } from "./mock"
 
 
 export const Portafolio = () => {
@@ -22,7 +22,7 @@ export const Portafolio = () => {
       <Col xs={24} md={12} lg={16}>
         <Row gutter={[16, 24]}>
             <Col xs={24} style={{display:'flex', flexDirection:"column", gap:'12px'}}>
-              {projects.map(i=>(<ProjectCard img={i.img} hashtags={i.hashtags} title={i.title} desc={i.desc} demo={i.demo} code={i.code} />))}
+              {projectsIOS.map(i=>(<ProjectCard img={i.img} hashtags={i.hashtags} title={i.title} desc={i.desc} demo={i.demo} code={i.code} />))}
             </Col>
             
         </Row>  
