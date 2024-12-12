@@ -2,15 +2,15 @@ import { classes, media, style } from 'typestyle'
 import { textMixin } from '../theme'
 
 interface ProjectCardProps {
-    hashtags:string[],
-    title:string,
-    desc:string,
-    demo:string,
-    code:string,
-    img:string
+    hashtags: string[],
+    title:  string,
+    desc:   string,
+    demo:   string,
+    code:   string,
+    img:    string
 }
 
-export const ProjectCard:React.FC<ProjectCardProps> = ({hashtags, title, desc, demo, code, img}) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({hashtags, title, desc, demo, code, img}) => {
   return (
     <article className={projectWrapper}>
         <figure className={projectFigure}>
@@ -24,16 +24,17 @@ export const ProjectCard:React.FC<ProjectCardProps> = ({hashtags, title, desc, d
                 <h4 className={classes(textStyle, style(textMixin('#333', '24px')))}>
                 {title}
                 </h4>
-                <p className={classes(textStyle, style(textMixin('#828282', '16px')))}>
+                <p className={classes(textStyle, style(textMixin('#828282', '16px')), style({marginTop: '10px'}))}>
                     {desc}
                 </p>
             </section>
             <section className={classes(projectSection, style({display:'flex', gap:'9px', marginTop:'51px'})) }>
                 {
                     demo !== '' ? (
-                        <a ref={demo}>
+                        <a href={demo}>
                             <button className={classes(projectButton, textStyle)} >
-                            Demo</button>
+                                Demo
+                            </button>
                         </a>
                     ) : null
                 }
