@@ -2,12 +2,12 @@ import { classes, media, style } from 'typestyle'
 import { textMixin } from '../theme'
 
 interface ProjectCardProps {
-    hashtags:string[],
-    title:string,
-    desc:string,
-    demo:string,
-    code:string,
-    img:string
+    hashtags: string[],
+    title:  string,
+    desc:   string,
+    demo:   string,
+    code:   string,
+    img:    string
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({hashtags, title, desc, demo, code, img}) => {
@@ -24,7 +24,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({hashtags, title, desc, 
                 <h4 className={classes(textStyle, style(textMixin('#333', '24px')))}>
                 {title}
                 </h4>
-                <p className={classes(textStyle, style(textMixin('#828282', '16px')))}>
+                <p className={classes(textStyle, style(textMixin('#828282', '16px')), style({marginTop: '10px'}))}>
                     {desc}
                 </p>
             </section>

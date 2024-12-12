@@ -34,7 +34,7 @@ export const projectsWEB:Project[] = [
         code:'https://github.com/victorsheepman/TodoApp-TS',
         demo:'https://gentle-sunburst-dad1fe.netlify.app/',
         img:'https://sqrevjfizglmjxxfuvxy.supabase.co/storage/v1/object/sign/Talhua/todoApp.png?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJUYWxodWEvdG9kb0FwcC5wbmciLCJpYXQiOjE3MDU1OTgzOTMsImV4cCI6MTczNzEzNDM5M30.fWbIoc0zTBxjt7IZdVTpUObEq4TNdQJZZjjQs6eZ4Wg&t=2024-01-18T17%3A19%3A35.096Z'
-    },
+    }
 ]
 
 export const projectsIOS:Project[] = [

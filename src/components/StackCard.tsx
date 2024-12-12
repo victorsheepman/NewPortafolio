@@ -1,6 +1,6 @@
 import { Col, Row } from 'antd'
 import { style } from 'typestyle'
-import { SwiftIcon, SwiftUIIcon, Xcode  } from '../assets'
+import { ReactIcon, ReduxIcon, TsIcon } from '../assets'
 
 export const StackCard = () => {
   return (
@@ -8,13 +8,13 @@ export const StackCard = () => {
         <h5 className={textStyle}>Stack</h5>
         <Row className={style({alignItems:'baseline'})}>
             <Col span={8}>
-                <SwiftIcon />
+                <TsIcon />
             </Col>
             <Col span={8}>
-                <SwiftUIIcon />
+                <ReduxIcon />
             </Col>
             <Col span={8}>
-               <Xcode />
+               <ReactIcon />
             </Col>
         </Row>
     </div>
