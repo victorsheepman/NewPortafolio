@@ -10,7 +10,7 @@ interface ProjectCardProps {
     img:string
 }
 
-export const ProjectCard:React.FC<ProjectCardProps> = ({hashtags, title, desc, demo, code, img}) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({hashtags, title, desc, demo, code, img}) => {
   return (
     <article className={projectWrapper}>
         <figure className={projectFigure}>
@@ -31,9 +31,10 @@ export const ProjectCard:React.FC<ProjectCardProps> = ({hashtags, title, desc, d
             <section className={classes(projectSection, style({display:'flex', gap:'9px', marginTop:'51px'})) }>
                 {
                     demo !== '' ? (
-                        <a ref={demo}>
+                        <a href={demo}>
                             <button className={classes(projectButton, textStyle)} >
-                            Demo</button>
+                                Demo
+                            </button>
                         </a>
                     ) : null
                 }
